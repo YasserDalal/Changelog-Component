@@ -1,0 +1,61 @@
+body button.toggleButton {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 90px;
+  font-size: 17px;
+  height: 40px;
+  border-radius: 13px;
+  cursor: pointer;
+  border: 1px solid rgb(237, 237, 237);
+}
+
+/* Light mode */
+.lightModeToggle, .toggleButton {
+  background-color: rgb(219, 219, 219);
+  color: rgb(48, 48, 48);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.lightModeToggle:hover,
+.toggleButton:hover {
+  background-color: rgb(48, 48, 48);
+  color: rgb(219, 219, 219);
+  border: 1px solid rgb(237, 237, 237);
+}
+
+/* Dark mode */
+.darkModeToggle {
+  background-color: rgb(48, 48, 48);
+  color: rgb(219, 219, 219);
+  border: 1px solid rgb(237, 237, 237);
+}
+
+.darkModeToggle:hover {
+  background-color: rgb(219, 219, 219);
+  color: rgb(48, 48, 48);
+  border: 1px solid rgb(48, 48, 48);
+}
+
+/* Disable hover effect on mobile devices */
+@media (hover: none) {
+
+  /*There are a few weird issues going on mobile*/
+
+  /*Every time we touch the hover executes first before the final design so there's a slight delay at some point*/
+
+
+  /*We touch the button first so the hover executes and when we navigate to other tab the button will execute the final design. Instead the hover will still the same as the final design so it don't make differences*/
+  .lightModeToggle:hover {
+    background-color: rgb(219, 219, 219);
+    color: rgb(48, 48, 48);
+    border: 1px solid rgb(237, 237, 237);
+  }
+
+  .darkModeToggle:hover {
+    background-color: rgb(48, 48, 48);
+    color: rgb(219, 219, 219);
+    border: 1px solid rgb(48, 48, 48);
+  }
+}

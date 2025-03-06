@@ -1,0 +1,157 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  height: 100vh;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.darkMode {
+  background-color: rgb(19, 19, 19);
+  color: rgb(237, 237, 237);
+}
+
+.lightMode {
+  background-color: rgb(231, 231, 231);
+  color: rgb(33, 33, 33);
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  margin: 0px;
+  font-weight: 100;
+}
+
+.title-header p {
+  color: rgb(173, 173, 173);
+  margin-bottom: 40px;
+}
+
+.title-header p.lightMode_ExtraInfo {
+  color: rgb(33, 33, 33);
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content p {
+  margin-bottom: 40px;
+}
+
+.main-content p:first-child {
+  margin-top: 40px;
+}
+
+.dates {
+  text-align: end;
+}
+
+.white-line-and-white-circle {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.line {
+  height: 100%;
+  width: 2px;
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 150px;
+  position: absolute;
+  left: 14.7px;
+}
+
+.white-line, .white-dot {
+  background-color: rgb(237, 237, 237);
+}
+
+.blackLine, .black-dot {
+  background-color: rgb(19, 19, 19);
+}
+
+.circle:nth-child(2){
+  top: 9.3%;
+  bottom: 10px;
+}
+
+.circle:nth-child(3){
+  top: 22.2%;
+  bottom: 10px;
+}
+
+.circle:nth-child(4){
+  top: 35.5%;
+  bottom: 10px;
+}
+
+.circle:nth-child(5){
+  top: 48.5%;
+  bottom: 10px;
+}
+
+.circle:nth-child(6){
+  top: 61.7%;
+  bottom: 10px;
+}
+
+.circle:nth-child(7){
+  top: 74.7%;
+  bottom: 10px;
+}
+
+.circle:last-child{
+  top: 87.7%;
+  bottom: 10px;
+}
+
+@media (max-width: 768px) and (min-width: 410px){
+
+  .title-header p{
+    font-size: 13px;
+  }
+
+  .main-content p {
+    font-size: 11px;
+  }
+
+  .circle:nth-child(2){
+    top: 9.7%;
+    bottom: 10px;
+  }
+
+  .circle:nth-child(3){
+    top: 22.7%;
+    bottom: 10px;
+  }
+
+  .circle:nth-child(4){
+    top: 35.7%;
+    bottom: 10px;
+  }
+
+  .circle:nth-child(5){
+    top: 48.5%;
+  }
+  .circle:nth-child(6){
+    top: 61.2%;
+  }
+  .circle:nth-child(7){
+    top: 74.2%;
+  }
+  .circle:last-child{
+    top: 87.2%;
+  }
+}
